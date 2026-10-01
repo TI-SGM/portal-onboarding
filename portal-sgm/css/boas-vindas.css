@@ -1,0 +1,19 @@
+/* Página: Boas-vindas */
+.page-welcome{color:#fff}
+.hero{
+  min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;
+  /* Para usar a foto real: troque o 2º gradiente por url("../img/recepcao.jpg") center/cover */
+  background:
+    linear-gradient(90deg,rgba(8,20,38,.92) 35%,rgba(8,20,38,.45)),
+    repeating-linear-gradient(90deg,#3a2a1c 0 14px,#2b1f15 14px 28px);
+}
+.hero header{display:flex;justify-content:space-between;align-items:center;padding:28px 6vw}
+.hero header span{font-size:13px;font-weight:500}
+.hero main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 6vw;max-width:760px}
+.hero h1{font-size:clamp(38px,6vw,64px);margin:0 0 12px;line-height:1.05}
+.hero h2{font-size:clamp(18px,2.4vw,24px);font-weight:400;margin:0 0 22px}
+.hero p{max-width:440px;line-height:1.6;margin:0 0 28px;opacity:.9}
+.cta{background:#fff;color:#14213a;border-radius:8px;padding:14px 22px;font-weight:600;align-self:flex-start;transition:background .15s}
+.cta:hover{background:#e9effa}
+.hero footer{text-align:center;padding:22px;font-size:12px}
+.hero footer a{color:#fff;font-weight:500;display:inline-flex;flex-direction:column;gap:6px;align-items:center}

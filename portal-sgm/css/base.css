@@ -1,0 +1,17 @@
+/* Base compartilhada: variáveis, reset e logo */
+:root{
+  --navy:#0f2a4a;--navy2:#16365d;--blue:#1d6fe0;--bg:#f4f6fa;--card:#fff;
+  --ink:#14213a;--mute:#6b778c;--line:#e4e8f0;--ok:#22a45d;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0c1524;--card:#14223a;--ink:#e8eefb;--mute:#93a1bb;--line:#223454}
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Inter,sans-serif;font-size:14px;color:var(--ink);background:var(--bg)}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+.logo{display:block;font-weight:800;letter-spacing:.02em;line-height:1;color:#fff}
+.logo b{display:block;font-size:28px}
+.logo small{font-size:8px;letter-spacing:.25em;font-weight:500;opacity:.8}
