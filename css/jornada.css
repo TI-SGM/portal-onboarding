@@ -1,0 +1,31 @@
+/* Página: Minha Jornada */
+.jornada{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;align-items:start}
+.prog{color:var(--ink);font-size:13px}
+.prog span{color:var(--mute)}
+
+.fase{margin:22px 0 4px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.etapas{list-style:none;margin:0;padding:0}
+.etapa{border-top:1px solid var(--line)}
+.etapa label,.etapa>div{display:flex;gap:12px;align-items:center;padding:12px 0}
+.etapa label{cursor:pointer}
+.etapa .txt{flex:1;min-width:0}
+.etapa .txt b{display:block;font-weight:600}
+.etapa .txt small{display:block;color:var(--mute);font-size:12px;margin-top:2px}
+.etapa .st{color:var(--mute);font-size:12px;white-space:nowrap}
+.etapa.ok .st{color:var(--ok)}
+
+.etapa input{appearance:none;flex:none;width:20px;height:20px;margin:0;border:2px solid var(--mute);border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.etapa input:checked{background:var(--ok);border-color:var(--ok)}
+.etapa input:checked::after{content:"✓";color:#fff;font-size:12px;font-weight:700}
+
+/* Itens preparados pela SGM: só leitura, visual mais discreto */
+.etapa.sgm .txt b{font-weight:500}
+.dot{flex:none;width:20px;height:20px;border-radius:50%;border:2px dashed var(--mute);display:inline-grid;place-items:center;font-size:11px;font-weight:700;color:var(--ok);vertical-align:middle}
+.etapa.sgm.ok .dot,.dot.ok{border:2px solid var(--ok);background:transparent}
+
+.dica p{margin:8px 0 0;color:var(--mute);font-size:12.5px;line-height:1.55}
+.dica strong{color:var(--ink)}
+
+@media (max-width:900px){
+  .jornada{grid-template-columns:1fr}
+}

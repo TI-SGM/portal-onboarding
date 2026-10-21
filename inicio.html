@@ -24,8 +24,8 @@
         <a href="contato.html">✉️ Contato</a>
       </nav>
       <div class="user">
-        <div class="av">JS</div>
-        <div>Maycon 100%<small>Assistente Contábil</small></div>
+        <div class="av">RS</div>
+        <div>Ryan Sena<small>Assistente Contábil</small></div>
       </div>
     </aside>
 
@@ -34,23 +34,24 @@
         <input type="search" placeholder="Buscar informações, sistemas, documentos..." aria-label="Buscar">
         <div class="sp"></div>
         <button class="bell" aria-label="Notificações">🔔</button>
-        <div class="av">JS</div>
+        <div class="av">RS</div>
       </div>
 
-      <h1 class="hi">Olá, 100%! 👋</h1>
+      <h1 class="hi">Olá, Ryan! 👋</h1>
       <p class="sub">Bem-vindo à SGM Consultores. Estamos felizes em ter você conosco.</p>
 
       <div class="grid">
-        <div class="card">
+        <div class="card" id="resumo-jornada">
           <h4>Sua jornada de integração</h4>
-          <div class="row"><span>4 de 8 concluídos</span><span>50%</span></div>
-          <div class="bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><i style="width:50%"></i></div>
+          <div class="row"><span data-prog-txt>0 de 0 concluídas</span><span data-prog-pct>0%</span></div>
+          <div class="bar" data-prog-bar role="progressbar" aria-label="Progresso das suas etapas" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i style="width:0%"></i></div>
         </div>
         <div class="card first">
           <h4>Seu primeiro dia</h4>
           <p><strong>05 de outubro de 2026</strong></p>
           <p>Contábil</p>
           <p>Responsável: Ana Paula (RH)</p>
+          <p>Responsável: Maycon (TI)</p>
         </div>
       </div>
 
@@ -61,9 +62,12 @@
         <a class="card tile" href="minha-jornada.html"><div class="ic">✅</div><h4>Minha integração</h4><p>Acompanhe seu checklist de onboarding.</p><span>Acessar →</span></a>
         <a class="card tile" href="treinamentos.html"><div class="ic">🎓</div><h4>Treinamentos</h4><p>Conteúdos e treinamentos do seu setor.</p><span>Acessar →</span></a>
         <a class="card tile" href="suporte-ti.html"><div class="ic">🎧</div><h4>Suporte de TI</h4><p>Precisa de ajuda? Abra um chamado.</p><span>Acessar →</span></a>
+        
       </div>
     </div>
 
   </div>
+  <script src="js/jornada.js"></script>
+  <script>atualizarResumo(document.getElementById("resumo-jornada"));</script>
 </body>
 </html>

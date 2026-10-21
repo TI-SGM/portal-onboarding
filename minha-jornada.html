@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha Jornada — SGM Consultores</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/jornada.css">
+</head>
+<body>
+  <div class="app">
+
+    <aside class="side">
+      <a class="logo" href="index.html"><b>SGM</b><small>CONSULTORES</small></a>
+      <nav aria-label="Menu principal">
+        <a href="inicio.html">🏠 Início</a>
+        <a href="minha-jornada.html" aria-current="page">🧭 Minha Jornada</a>
+        <a href="quem-e-a-sgm.html">👥 Quem é a SGM</a>
+        <a href="meu-primeiro-dia.html">📅 Meu Primeiro Dia</a>
+        <a href="sistemas-e-acessos.html">🖥️ Sistemas e Acessos</a>
+        <a href="treinamentos.html">🎓 Treinamentos</a>
+        <a href="suporte-ti.html">🎧 Suporte de TI</a>
+        <a href="documentos.html">📄 Documentos</a>
+        <a href="contato.html">✉️ Contato</a>
+      </nav>
+      <div class="user">
+        <div class="av">RS</div>
+        <div>Ryan Sena<small>Assistente Contábil</small></div>
+      </div>
+    </aside>
+
+    <div class="content" id="jornada">
+      <div class="top">
+        <input type="search" placeholder="Buscar informações, sistemas, documentos..." aria-label="Buscar">
+        <div class="sp"></div>
+        <button class="bell" aria-label="Notificações">🔔</button>
+        <div class="av">RS</div>
+      </div>
+
+      <h1 class="hi">Minha integração</h1>
+      <p class="sub">Acompanhe as etapas da sua jornada na SGM.</p>
+
+      <div class="jornada">
+        <div class="card">
+          <div class="row prog">
+            <strong data-prog-txt>0 de 0 concluídas</strong><span data-prog-pct>0%</span>
+          </div>
+          <div class="bar" data-prog-bar role="progressbar" aria-label="Progresso das suas etapas" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><i style="width:0%"></i></div>
+          <div data-lista></div>
+        </div>
+
+        <aside class="card dica">
+          <h4>Como funciona</h4>
+          <p>Marque as <strong>suas etapas</strong> assim que concluir cada uma.</p>
+          <p>Os itens com <span class="dot ok" aria-hidden="true">✓</span> são preparados pelo RH, pela TI ou pelo seu gestor. Eles aparecem aqui só para você saber o que já está pronto.</p>
+        </aside>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/jornada.js"></script>
+  <script>renderJornada(document.getElementById("jornada"));</script>
+</body>
+</html>

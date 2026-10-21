@@ -36,7 +36,7 @@
 .tile span{color:var(--blue);font-weight:600;font-size:12px}
 
 @media (max-width:900px){
-  .app{grid-template-columns:1fr}
+  .app{grid-template-columns:minmax(0,1fr)}
   .side{position:static;height:auto}
   .side nav{flex-direction:row;overflow-x:auto}
   .side nav a{white-space:nowrap}
